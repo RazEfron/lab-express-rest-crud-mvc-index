@@ -93,7 +93,7 @@ For each model, make a folder with the appropriate file name. For example, for t
     street: "23 Broadway",
     city: "New York",
     state: "NY",
-    zip: "11011",
+    zip: "10011",
   },
 ];
 ```
@@ -206,9 +206,9 @@ Each controller should serve an index (an array of all of the objects of the res
 Once you've built the route in each controller, you should be able to visit the URLs below and see data for the associated resource.
 
 - http://localhost:3333/locations
-- http://localhost:3333/people
+- http://localhost:3333/persons
 - http://localhost:3333/plans
-- http://localhost:3333/equipment
+- http://localhost:3333/machines
 - http://localhost:3333/special-events
 
 ### Create a Catch-all/404 Route
@@ -245,8 +245,8 @@ Create a `GET` route at `/locations/people` that organizes each person according
     street: "23 Broadway",
     city: "New York",
     state: "NY",
-    zip: "11011",
-    members: [
+    zip: "10011",
+    people: [
       {
         name: "Amandine",
         role: "member",
